@@ -24,9 +24,9 @@ public class CommandHub implements CommandExecutor {
                         if (args[0].equalsIgnoreCase("reload")) {
                             if (player.hasPermission("serverhub.reload")) {
                                 plugin.reloadConfig();
-                                player.sendMessage(ChatColor.GREEN + "The server hub has been reloaded");
+                                player.sendMessage(ChatColor.GREEN + "The ServerHub-Plugin has been reloaded");
                             } else {
-                                player.sendMessage(ChatColor.RED + "You don't have permission to use this command");
+                                player.sendMessage(ChatColor.RED + "You don't have permission to use command!");
                             }
                         } else {
                             player.sendMessage(ChatColor.RED + "Incorrect usage! Type /hub");
